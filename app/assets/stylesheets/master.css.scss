@@ -2,6 +2,10 @@
 @import "bootstrap";
 @import 'https://fonts.googleapis.com/css?family=Baloo+Chettan|Baloo+Tamma';
 
+.about {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
 .clear {
   clear:both;
 }
@@ -50,12 +54,20 @@
   font-size:20px;
 }
 
+.modal {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
 .footer-blurb {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-style: italic;
   text-align:right;
   font-size:10px;
   font-size: 15px
+}
+
+.logo:hover {
+  text-decoration:none;
 }
 
 header {
@@ -74,4 +86,15 @@ h1 {
 
 h2 {
   font-family: 'nobilemedium_italic', sans-serif;
+}
+
+h2 span {
+  color: #dddddd;
+  font-family: 'nobileregular', sans-serif;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
 }
