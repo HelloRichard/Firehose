@@ -4,7 +4,7 @@ class QuotesController < ApplicationController
   end
 
   def create
-    @quote = Quote.create(quote_params)
+    @quote = Quote.create(quote_params) #this one creates the new quotes
     if @quote.invalid?
       flash[:error] = '<strong>Could not save</strong> the data you entered is invalid.'
     end
@@ -17,6 +17,6 @@ class QuotesController < ApplicationController
   private
 
   def quote_params
-    params.require(:quote).permit(:saying, :author)
+    params.require(:quote).permit(:saying, :author) #this pulls the values that were created
   end
 end
